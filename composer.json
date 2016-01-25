@@ -11,9 +11,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "~4.0|~4.1|~4.2|~5.0|~5.1|~5.2",
-    },
-    "require-dev": {
+        "illuminate/support": "~4.0|~4.1|~4.2|~5.0|~5.1|~5.2"
     },
     "autoload": {
         "psr-0": {
