@@ -4,7 +4,7 @@ This package offers a simple trait that leverages the Eloquent delete event to r
 
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `fish/one-validator`.
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `fish/eloquent-cascade`.
 
     "require": {
       "fish/eloquent-cascade": "dev-master"

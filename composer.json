@@ -17,6 +17,5 @@
         "psr-0": {
             "Fish\\Cascade": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
