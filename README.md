@@ -18,48 +18,48 @@ Begin by installing this package through Composer. Edit your project's `composer
 
 1. Include the trait in a parent model and make the other models extend it:
 
-      namespace App;
+        namespace App;
 
-      use Illuminate\Database\Eloquent\Model;
-      use Fish\Cascade\Cascade;
+        use Illuminate\Database\Eloquent\Model;
+        use Fish\Cascade\Cascade;
 
-      class BaseModel extends Model
-      {
-          use Cascade;
-      }
+        class BaseModel extends Model
+        {
+            use Cascade;
+        }
 
 1. Add the relations you wish to delete to a protected `$cascade` array on the model:
 
-      class Author extends BaseModel
-      {
+        class Author extends BaseModel
+        {
 
-          protected $cascade = ['user','posts'];
+            protected $cascade = ['user','posts'];
 
-          public function user() {
+            public function user() {
 
-            return $this->belongsTo(User::class);
+              return $this->belongsTo(User::class);
 
-          }
+            }
 
-          public function posts() {
+            public function posts() {
 
-            return $this->hasMany(Post::class);
+              return $this->hasMany(Post::class);
 
-          }
-
-      }
-
-      class Post extends BaseModel
-      {
-
-        protected $cascade = ['comments'];
-
-        public function comments() {
-
-          return $this->hasMany(Comment::class);
+            }
 
         }
 
-      }
+        class Post extends BaseModel
+        {
+
+          protected $cascade = ['comments'];
+
+          public function comments() {
+
+            return $this->hasMany(Comment::class);
+
+          }
+
+        }
 
 
