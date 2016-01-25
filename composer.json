@@ -1,0 +1,24 @@
+{
+    "name": "fish/eloquent-cascade",
+    "description": "Cascading delete trait for Laravel's Eloquent",
+    "keywords":["laravel","eloquent","cascade","delete","relations"],
+    "license":"MIT",
+    "authors": [
+        {
+            "name": "Matanya Fishaimer",
+            "email": "matfish2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4.0|~4.1|~4.2|~5.0|~5.1|~5.2",
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": {
+            "Fish\\Cascade": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
