@@ -28,12 +28,24 @@ Begin by installing this package through Composer. Edit your project's `composer
             use Cascade;
         }
 
-1. Add the relations you wish to delete to a protected `$cascade` array on the model:
+1. Add the relations you wish to delete to a protected `$cascade` array on the model. e.g:
+
+        class User extends BaseModel
+        {
+
+            protected $cascade = ['author'];
+
+            public function author() {
+
+              return $this->hasOne(Author::class);
+
+            }
+        }
 
         class Author extends BaseModel
         {
 
-            protected $cascade = ['user','posts'];
+            protected $cascade = ['posts'];
 
             public function user() {
 
