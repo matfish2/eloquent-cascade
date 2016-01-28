@@ -75,3 +75,19 @@ Begin by installing this package through Composer. Edit your project's `composer
         }
 
 
+If you are using a trait for polymorphic relations and want to add this relation to the `$cascade` array, override the protected `getCascade` method.
+Suppose you have a `Locale` trait:
+
+       trait Locale {
+
+        public function locale() {
+            return $this->morphMany(Locale::class, 'translatable');
+        }
+
+        protected function getCascade() {
+          return array_merge($this->cascade, ['locale']);
+        }
+
+       }
+
+
