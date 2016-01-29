@@ -1,5 +1,7 @@
 # Laravel Eloquent Cascading Delete
 
+[![Build Status](https://travis-ci.org/matfish2/eloquent-cascade.svg?branch=master)](https://travis-ci.org/matfish2/eloquent-cascade)
+
 This package offers a simple trait that leverages the Eloquent delete event to recursively delete all specified relations for a given model.
 
 ## Installation
