@@ -9,7 +9,7 @@ This package offers a simple trait that leverages the Eloquent delete event to r
 Begin by installing this package through Composer. Edit your project's `composer.json` file to require `fish/eloquent-cascade`.
 
     "require": {
-      "fish/eloquent-cascade": "dev-master"
+      "fish/eloquent-cascade": "^1.0"
     }
 
   Next, update Composer from the Terminal:
