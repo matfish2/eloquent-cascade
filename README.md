@@ -1,6 +1,6 @@
 # Laravel Eloquent Cascading Delete
 
-[![Latest Stable Version](https://poser.pugx.org/fish/eloquent-cascade/v/stable)](https://packagist.org/packages/fish/eloquent-cascade) [![Total Downloads](https://poser.pugx.org/fish/eloquent-cascade/downloads)](https://packagist.org/packages/fish/eloquent-cascade) [![Latest Unstable Version](https://poser.pugx.org/fish/eloquent-cascade/v/unstable)](https://packagist.org/packages/fish/eloquent-cascade) [![License](https://poser.pugx.org/fish/eloquent-cascade/license)](https://packagist.org/packages/fish/eloquent-cascade)
+[![Latest Stable Version](https://poser.pugx.org/fish/eloquent-cascade/v/stable)](https://packagist.org/packages/fish/eloquent-cascade) [![Total Downloads](https://poser.pugx.org/fish/eloquent-cascade/downloads)](https://packagist.org/packages/fish/eloquent-cascade) [![Latest Unstable Version](https://poser.pugx.org/fish/eloquent-cascade/v/unstable)](https://packagist.org/packages/fish/eloquent-cascade) [![License](https://poser.pugx.org/fish/eloquent-cascade/license)](https://packagist.org/packages/fish/eloquent-cascade) [![Build Status](https://travis-ci.org/matfish2/eloquent-cascade.svg?branch=master)](https://travis-ci.org/matfish2/eloquent-cascade)
 
 This package offers a simple trait that leverages the Eloquent delete event to recursively delete all specified relations for a given model.
 
