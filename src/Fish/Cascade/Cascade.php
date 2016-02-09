@@ -4,11 +4,8 @@ namespace Fish\Cascade;
 
 trait Cascade {
 
- public static function boot()
+ public static function bootCascade()
  {
-
-  parent::boot();
-
   static::deleting(function ($model) {
     if (property_exists($model, 'cascade') && is_array($model->cascade)) {
       foreach ($model->getCascade() as $relation) {
